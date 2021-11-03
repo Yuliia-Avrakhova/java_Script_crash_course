@@ -101,7 +101,6 @@ console.log("result 2 ", res2);
 const a = 10;
 const b = 100;
 const c = 3;
- 
 // example with if
 if (a === 10) {
    console.log("a is equal 10");
