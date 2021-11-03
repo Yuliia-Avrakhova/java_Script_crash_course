@@ -54,17 +54,6 @@ c += a;
 let text1 = "John";
 let text2 = "Joee";
 let text3 = text1 + " " + text2;
-
-// Сomparison operators;
-
-const MATH_PI = 3.14;
-const radius = 10;
-const userName = "Robert";
- 
- comparison
-console.log (MATH_PI === 3.14);
-
-	
 console.log(userName === "Steven");
 
 // numbers comparison
