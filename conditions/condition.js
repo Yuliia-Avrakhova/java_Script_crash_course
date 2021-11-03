@@ -103,7 +103,6 @@ const c = 3;
 if (a === 10) {
    console.log("a is equal 10");
 }
- 
 // example with if..else
 if (b > 1) {
    console.log("b is bigger than 1");
