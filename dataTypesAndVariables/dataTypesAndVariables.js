@@ -1,102 +1,93 @@
-	
-var one = 1;
-var ONE = 1;
- 
-var $second = 2;
-var text = "text";
- 
-var centerX = 0.0;
-var sum = one + $second;
-var some_function = function() { console.log("Hello world!") };
-var isTrue = true;
 
-const one = 1;
-const ONE = 1;
+//Data types and variables
+//primitive 
+const number = 3; //number;
+const MATH_PI = 3.14;//number;
+const myName = "Yuliia";//string;
+const v = 'v';//string;
+const V = 'V';//string;
+console.log(typeof myName, typeof v, typeof PI); //checking data types
+
+let emptyVariable = null; //null;
+let temp = undefined; //undefined;
+let f = 0.0 //number;
+
+var boo = true; //boolean;
+console.log(typeof myName, typeof v, typeof PI, typeof emptyVariable, typeof temp, typeof boo); //checking data types
+
+//Object
+const cars = ["Audi", "Kia", "BMW"]; //array;
+
+const car = {type:"Audi", model:"B5", color:"black"}; //object;
+
+function myFunction() {             //function
+    console.log ("Hello World!")
+  };
+myFunction();
+
+// Compare operators;
+
+const num1 = 2;
+const num2 = "2";
  
-let $second = 2;
-let text = "text"; // can be overwritten
- 
-text = "new text";
- 
-// we will get the error -
-// Uncaught TypeError: Assignment to constant variable
-one = 2;
- 
-const centerX = 0.0;
-const sum = one + $second;
-const some_function = function() { console.log("Hello world!") };
-const isTrue = true;
+console.log(num1==num2);// Returns true
+console.log(num1===num2);// Returns false, as data types are different
+
+const str = "String text";
+const str2 = "String  text 2";
+
+console.log (str==str2);// Returns false
+console.log (str===str2);// Returns false
 
 
+let result1 = 5 < 10;
+console.log(result1);
 
+let result2 = 5 > 10;
+console.log(result2);
 
-const num = 1;
-const str = "Some text";
+let result3 = 3 <= 10;
+console.log(result3);
+
+let result4 = 3 >= 10;
+console.log(result4);
+
+let result5 = 3 != 10;
+console.log(result5);
+
+// appropriation operators
+let t1 = 5;
+t1 +=5;
+console.log(t1);
+
+let t2 = 5;
+t2 -=5;
+console.log(t2);
+
+let t3 = 5;
+t3 *=5;
+console.log(t3);
+
+let t4 = 5;
+t4 /=5;
+console.log(t4);
  
-typeof(num)               	    // Returns “number”
- 
-/*"John".constructor              // Returns function String()  {[native code]}
-(num).constructor               // Returns function Number()  {[native code]}
-false.constructor               // Returns function Boolean() {[native code]}
-[1,2,3,4].constructor           // Returns function Array()   {[native code]}
-{ name:"John",age:34 }.constructor  // Returns function Object()  {[native code]}
-new Date().constructor         // Returns function Date()    {[native code]}
-function (){}constructor       // Returns function Function(){[native code]}
+let t5 = 5;
+t5 %=5;
+console.log(t5);
+
+let t6 = 5;
+t6 **=5;
+console.log(t6);
+
+//String operators 
+let userName = "Yuliia";
+let surName = "Avrakhova";
+let fullName = userName + " " surName;
+console.log(userName + " " surName);
+// I can add a comment like that
+
+/*
+  I can add a comment also like that
+  to have multilines comment 
 */
-
-const num = 1;
-const num2 = "1";
- 
- 
-num == num2 	// Returns true
-num === num2 	// Returns false, as data types are different
- 
- 
- 
-const str = "Some text";
-const str2 = "Some text 2";
- 
-str == str2 	// Returns false
-str === str2 	// Returns false
-
-
-const userName = "Yuliia Avrakhova";
-let age = 27;
-let boo = true;
-console.log (userName);
-console.log(typeof userName, typeof age, typeof boo);
-
-const one = 1;
-const name= "Ivan";
-let variableShouldBeApdated = null;
-const a = "a";
-const A = "A";
-let temp = undefined;
-
-const obj ={
-   a: 10,
-   name: "Test",
-}
-const arr =[];
-
-function sayHello() {
-    let message = "Hello " + name;
-    console.log(message);
-}
-sayHello();
-
-function simpleMath(a,b) {
-    let result = a+b;
-    console.log(result);
-}
-simpleMath(11,22)
-
-function simpleMath(a,b) {
-    let result = a+b;
-    return result;
-}
-let sum = simpleMath (121, 345); 
-console.log(sum);
-
-console.log(one);
-console.log("It is name variable ", userName);
