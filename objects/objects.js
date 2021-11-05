@@ -53,6 +53,9 @@ const powder = {
     colour: "Nude",
     price: "Extra Class",
 }
+console.log(powder.valueOf());
+console.log(powder.hasOwnProperty('speak'));
+console.log(powder.toString());
 
 const cream = {
     location: "Germany",
@@ -121,4 +124,4 @@ if (antiperspirant.quantity > 500){   //Right number, sale it
 } else{
     console.log("Not enought"); //Not enought
 }
-
+*/
