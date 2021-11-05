@@ -124,4 +124,4 @@ if (antiperspirant.quantity > 500){   //Right number, sale it
 } else{
     console.log("Not enought"); //Not enought
 }
-*/
+
