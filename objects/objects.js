@@ -72,7 +72,7 @@ const perfumes ={
     producer: "Chanel",
     smell: "Nice",
 }
-
+ 
 let userParfumes = Object.assign ({},perfumes)  // Object.assign 
 
 perfumes.smell = "Disgasting";
@@ -100,6 +100,8 @@ Object.freeze(nailPolish); //Object freeze
 nailPolish.location= "Russia";
 console.log(nailPolish.location); //Poland
 
+console.log(Object.isFrozen(nailPolish));
+
 const shampoon = {
     location: "Europe",
     quantity: 600,
@@ -124,4 +126,9 @@ if (antiperspirant.quantity > 500){   //Right number, sale it
 } else{
     console.log("Not enought"); 
 }
+console.log(antiperspirant.toString()); //[object Object]
+console.log(antiperspirant.valueOf());
+
+
+
 
