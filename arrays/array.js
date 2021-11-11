@@ -1,5 +1,5 @@
 //Creating Arrays
-/*
+
 //  empty array to modify later
 let emptyArray = []; 
 
@@ -109,7 +109,6 @@ const result = newArray1.concat(newArray2);
 console.log(result); // [ 1, 2, 3, 4, 5, 6 ];
 
 
-*/
 /// Home work
 
 // add next numbers to the 3, 4, 5, 6
