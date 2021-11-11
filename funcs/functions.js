@@ -1,4 +1,4 @@
-/*
+
  const cosmetics = {
     quantity: 10,
     price: "Medium",
@@ -56,17 +56,9 @@ let result = (function () {
     return userName;
 })();
 console.log(result); //Yuliia
-*/
 
 
 
-
-
-
-
-
-
-/*
 const plus = (x, y) => x + y;
 const plusRes = plus(1,2);
 
@@ -75,7 +67,7 @@ console.log(plusRes);
 const minus = (a, b) => a - b;
 const minusRes=minus(100, 387);;
 console.log(minusRes);
-*/
+
 
 function plusFoo (j, p){
     return j + p;

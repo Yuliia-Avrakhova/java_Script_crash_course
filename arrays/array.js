@@ -1,5 +1,5 @@
 //Creating Arrays
-
+/*
 //  empty array to modify later
 let emptyArray = []; 
 
@@ -107,3 +107,50 @@ const newArray2 = [4, 5, 6];
 //concat arrays
 const result = newArray1.concat(newArray2);
 console.log(result); // [ 1, 2, 3, 4, 5, 6 ];
+
+
+*/
+/// Home work
+
+// add next numbers to the 3, 4, 5, 6
+const nums = [1, 2];
+nums.push(3);
+nums.push(4);
+nums.push(5);
+nums.push(6);
+console.log(nums); //[ 1, 2, 3, 4, 5, 6 ]
+// add new user Dmytro and his age is 18
+const users = [
+  {
+    name: "Borys",
+    age: 101
+  }
+];
+
+users.push({ name: "Dmytro", age: 18 });
+console.log(users); //[ { name: 'Borys', age: 101 }, { name: 'Dmytro', age: 18 } ]
+
+// remove first 2 elements
+const extraFirstNums = [101, 100, 1, 2, 3, 4];
+extraFirstNums.shift();
+extraFirstNums.shift();
+console.log(extraFirstNums); // [ 1, 2, 3, 4 ]
+
+//  remove last 2 elements
+const extraLastNums = [1, 2, 3, 4, 100, 101];
+extraLastNums.pop();
+extraLastNums.pop();
+console.log(extraLastNums); // [ 1, 2, 3, 4 ]
+
+// add 2 nums 0 and 1 at the start of array
+const extraFirstElements = [2, 3, 4];
+extraFirstElements.unshift(0, 1);
+console.log(extraFirstElements); // [ 0, 1, 2, 3, 4 ]
+
+// swap elements, that have indexes 0 and 3
+const sortedArray = [4, 2, 3, 1];
+function swap(arr, a, s) {
+  [arr[a], arr[s]] = [arr[s], arr[a]];
+}
+swap(sortedArray, 0, 3);
+console.log(sortedArray); // [ 1, 2, 3, 4 ]

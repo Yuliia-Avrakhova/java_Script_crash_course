@@ -67,3 +67,33 @@ switch (month){
     }
 }
 console.log("Month of year: ", monthOfYear);
+
+
+// Сalculate the area of a figure using
+// provided type: "square", "circle", or "rectangle"
+// for circle "a" is radius
+// for square only "a" needed
+
+function calculateFigureArea (figureType, a, b) {
+    switch (figureType) {
+        case "square":
+          return a * a;
+    
+        case "circle":
+          return Math.PI * a * a;
+    
+        case "rectangle":
+          return a * b;
+    
+        default:
+          console.log("Sorry, we can't caunt this information");
+        }
+    }
+    console.log(calculateFigureArea("square", 2, 0)); // 4
+    console.log(calculateFigureArea("circle", 2, 0)); // 12.566370614359172
+    console.log(calculateFigureArea("rectangle", 2, 3)); // 6
+
+
+
+
+
