@@ -1,4 +1,4 @@
-// While loop
+// While loop     
 let num = 0;
 while (num < 5) {
     num++;
@@ -78,6 +78,19 @@ function factorial(n) {
     return res;
 }
 console.log(factorial(5));
+*/
+ let counter = 5;
+ let factorial = 1;
+ 	
+// with the loop we will find n!
+do {
+    factorial *= counter;
+    counter--;
+  } while (counter >= 1)
+    
+  console.log('n!', factorial);
+
+
 
 const nums = [10, 20, 30, 40, 50, 60];
 let n = 0;
@@ -89,7 +102,6 @@ while (n < nums.length) {
   n++;
 }
 console.log('sum of nums items is ', sum);
-
 
 // For loop
 
@@ -117,7 +129,6 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log('sum of nums items is ', sum1); //21
 
-
 const arr = [10, 20, 30, 40, 50];
 let summ = 0;
 
@@ -125,7 +136,6 @@ for (h = 0; h < arr.length; h++) {
     summ = summ + arr[h];
 }
 console.log('Summ of array items is: ' + summ); // 150
-
 
 const words = ['The', 'World', 'is', 'mine'];
 let sentence = '';
