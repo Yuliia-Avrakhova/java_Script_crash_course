@@ -58,17 +58,6 @@ let result = (function () {
 console.log(result); //Yuliia
 
 
-
-const plus = (x, y) => x + y;
-const plusRes = plus(1,2);
-
-console.log(plusRes);
-
-const minus = (a, b) => a - b;
-const minusRes=minus(100, 387);;
-console.log(minusRes);
-
-
 function plusFoo (j, p){
     return j + p;
 }
@@ -159,3 +148,89 @@ function decreaseLowerArg(a, b){
     return lowerNumber - 100;
 }
 console.log(decreaseLowerArg(1000, 900)); //800
+
+//// Get this
+
+ function getPrice( currency = '$'){
+     console.log(currency + this.price);
+     return this;
+ }
+
+ function getName(){
+     console.log(this.name);
+     return this;
+ }
+
+ const prod1 = {
+     name: "Intel",
+     price: 100,
+     getPrice,
+     getName(){
+       console.log(this.name);  
+     },
+     info:{
+         information:[45,87],
+         getInfo:function(){
+             console.log(this); // { information: [ 45, 87 ], getInfo: [Function: getInfo] } 
+         }
+     }
+ };
+//prod1.getPrice(); // 100
+//prod1.info.getInfo();
+//prod1.getName(); // Intel
+
+const prod2 = {
+    name: "AMD",
+    price: 50,
+    getPrice,
+};
+
+ prod2.getName = prod1.getName;
+//prod2.getPrice(); //50 the same function? but in different object return their value
+
+// prod2.getName(); // "AMD"
+
+let str = "Hello, world!";
+const reversStr = str
+.split('')
+.reverse()
+.join('');
+//console.log(reversStr); // !dlrow ,olleH
+
+const prod3 = {
+    name: "AHJPOUT",
+    price: 780,
+    //getPrice,
+    //getName,
+};
+
+getPrice.call(prod3, '*'); // *780
+//prod3.getName().getPrice(); //AHJPOUT, 780
+
+//// Arrow function
+
+const plus = (x = 0, y = 0) => x + y;
+const plusRes = plus();
+console.log(plusRes); //3
+
+//function plusFoo(x, y){
+//  return x + y;
+//}
+
+const withoutArgs = () => console.log('tommorow');
+withoutArgs(); // tommorow
+const singleArg = (x = 8) => x * 2;
+console.log(singleArg()); //16
+const moreAction = (a, b) => {
+    a *=2;
+    b *=3;
+    return a + b; //16
+};
+console.log(moreAction(4,4)); //20
+
+
+
+
+
+
+
