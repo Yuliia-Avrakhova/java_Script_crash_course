@@ -70,7 +70,7 @@ mixArray2.push(1000);
 mixArray2.push({k:34});
 mixArray2.push('i like New Year');
 
-console.log(mixArray2); //// [ 1, 'abc', 'Christmas', { n: 1 }, [ 1, 2, 3 ], 23 ] + 1000, { k: 34 }, 'i like New Year'
+console.log(mixArray2); //// [ 1, 'abc', 'Christmas', { n: 1 }, [ 1, 2, 3 ], 23 ] + 1000, { k: 34 }, 'i like New Year']
 
 //method pop()
 const mixArray3 = [ 1, 'abc', 'Christmas', { n: 1 }, [ 1, 2, 3 ], 23, { v:5 }];
