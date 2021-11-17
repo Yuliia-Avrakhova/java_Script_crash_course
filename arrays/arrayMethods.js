@@ -4,16 +4,15 @@ const arrayNums = [7,101,3,1,9,11,100,111]
 
 function sortArray(array) {
     arrayNums.sort(
-        (curr, next) => {
-      if (curr < next) {
+        (a, b) => {
+      if (a < b) {
         return -1;
-} else {
-      return "wrong number";
-    }
+} 
   });
 }
+
 sortArray(arrayNums);
-console.log(arrayNums);  [1,   3,   7,   9, 11, 100, 101, 111]
+console.log(arrayNums);  [1, 3, 7, 9, 11, 100, 101, 111]
 
 function sortArray(array){
     arrayNums.sort(
@@ -29,7 +28,7 @@ sortArray(arrayNums);
 console.log(arrayNums); // [111, 101, 100, 11, 9,   7,   3,  1]
 
 const nums = [1, 2, 3, 4, 5, 6 ];
-let sum =0;
+let sum = 0;
 
 for (let i = 0; i < nums.length; i++) {
     sum = sum + nums[i];
@@ -38,14 +37,14 @@ console.log('Sum of nums items is ', sum);
 
 // in the loop we will find a sum of nums array items, 
 // the same result as in for loop
-const nums = [1, 2, 3, 4, 5, 6 ];
-let sum =0;
+const nums7 = [1, 2, 3, 4, 5, 6 ];
+let sum7 =0;
 
-nums.forEach((num, index) => {
-    sum += num;
+nums.forEach((num7, index) => {
+    sum7 += num7;
 })
-console.log('Sum of nums items is ', sum); // Sum of nums items is  21
-
+console.log('Sum of nums items is ', sum7); // Sum of nums items is  21
+/*
 // Task 2 - filter an array of strings and keep only
 //a string, that doesn't contain the word 'test'
 const stringsArray = [ 'one-test', 'cat', 'parrot', 'banana', 'test-dog', 'dog'];
